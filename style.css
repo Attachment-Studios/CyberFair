@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+:root {
+	--bg: #FBF6E2;
+	--tc: #887BB0;
+	--sb: #85D2D0;
+	--tf: 'Kalam';
+	--tt: 0.2s;
+}
+
+* {
+	background: var(--bg);
+	color: var(--tc);
+	font-family: var(--tf);
+	transition: var(--tt);
+	margin: 0;
+	padding: 0;
+	cursor: default;
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 64px;
+}
+
+::selection {
+	background: var(--sb);
+}
+
+a {
+	color: var(--sb);
+	background: transparent;
+	cursor: pointer;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-left: -6px;
+	border-radius: 5px;
+	font-size: inherit;
+}
+
+a:hover {
+	background: var(--tc);
+}
+
+a::selection {
+	background: var(--tc);
+}
+
+.up-button {
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+	background: transparent;
+}
+
+.up-button i {
+	background: var(--sb);
+	padding: 10px;
+	border-radius: 100px;
+	opacity: 60%;
+	cursor: pointer;
+}
+
+.up-button i:hover {
+	opacity: 90%;
+}
+
+::-webkit-scrollbar {
+	width: 7.5px;
+	height: 5px;
+	background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--tc);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--sb);
+	border-radius: 10px;
+}
+
+.banner {
+	width: 100%;
+	height: 50%;
+	padding: 0;
+}
+
+.banner img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+div {
+	padding: 10px;
+}
+
+i {
+	background: transparent;
+}
+
+.contextmenu {
+	position: fixed;
+	top: -100%;
+	left: -100%;
+	background: var(--sb);
+	border-radius: 10px;
+	padding: 0px;
+	opacity: 75%;
+}
+
+.contextmenu:hover {
+	opacity: 90%;
+}
+
+.contextmenu i {
+	padding: 5px;
+	background: var(--bg);
+	opacity: 60%;
+	border-radius: 7.5px;
+	cursor: pointer;
+}
+
+.contextmenu i:hover {
+	opacity: 90%;
+}
+
+button {
+	background: var(--sb);
+	color: var(--tc);
+	outline: none;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 15px;
+	font-size: inherit;
+	cursor: pointer;
+	border: none;
+}
+
+button:hover {
+	background: var(--tc);
+	color: var(--bg);
+}
+
+p {
+	background: transparent;
+	color: inherit;
+}
+
+.foot {
+	background: var(--tc);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: var(--bg);
+	min-height: 25%;
+	font-size: 12px;
+}
+
+.foot p {
+	font-size: inherit;
+}
+
+.foot p#links {
+	font-size: inherit;
+	columns: 4;
+}
+
+.foot p#links a:hover {
+	background: var(--bg);
+}
+
